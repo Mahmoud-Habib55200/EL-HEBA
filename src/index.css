@@ -1,0 +1,116 @@
+.slider-container {
+     width: 100%;
+     height: 100vh;
+     position: relative;
+}
+
+.my-swiper {
+     width: 100%;
+     height: 100%;
+}
+
+.slide-content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     position: relative;
+     height: 100%;
+     color: white;
+     background-size: cover;
+     background-position: center;
+}
+
+.slide-content img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     position: absolute;
+     z-index: -1;
+}
+
+h2 {
+     font-size: 2rem;
+     margin-bottom: 10px;
+}
+
+p {
+     font-size: 1.2rem;
+}
+
+.swiper-pagination-bullet {
+     background: white !important;
+}
+
+
+
+
+.animate-type {
+     display: inline-block;
+     white-space: nowrap;
+     overflow: hidden;
+     width: 0;
+     animation: typing 3s steps(40) 1s forwards;
+     /* هنا يمكنك ضبط سرعة الكتابة والعدد */
+}
+
+
+  .stroke-text {
+       color: transparent;
+       font-family: Arial, Helvetica, sans-serif;
+       -webkit-text-stroke-width: 1px;
+       -webkit-text-stroke-color: white;
+
+  }
+
+
+  /* Buttons */
+@keyframes glowing-border {
+     0% {
+          border-color: #ff007a;
+     }
+
+     50% {
+          border-color: #00ffcc;
+     }
+
+     100% {
+          border-color: #ff007a;
+     }
+}
+
+.border-glow {
+     border: 2px solid transparent;
+     background-clip: padding-box;
+     animation: glowing-border 2s infinite;
+     padding: 10px 20px;
+     color: white;
+     background-color: transparent;
+     font-size: 16px;
+     font-weight: 500;
+     border-radius: 8px;
+     cursor: pointer;
+}
+
+ 
+
+/* quality */
+
+/* Add these styles in your CSS */
+.fade-in {
+     opacity: 0;
+     transform: translateY(20px);
+     transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+     opacity: 1;
+     transform: translateY(0);
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
