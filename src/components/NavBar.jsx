@@ -70,8 +70,7 @@ const NavBar = ({ transparent }) => {
                     >
                         <div className="flex items-center justify-between rounded-full">
                             <IoClose fontSize="24px" />
-                            <Link to='/'>
-                                <img className="w-10 mr-3" src={logo} alt="" /></Link>
+                         
                         </div>
                     </div>
 
@@ -86,14 +85,7 @@ const NavBar = ({ transparent }) => {
                         ))}
                     </ul>
 
-                    <div className="text-white flex flex-col mt-7 px-4 gap-4">
-                        <button
-                            className="border-glow  rounded-3xl"
-                        >
-                            Get Started
-                        </button>
- 
-                    </div>
+                   
                 </div>
 
             </div>
