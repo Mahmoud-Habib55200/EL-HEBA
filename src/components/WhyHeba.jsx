@@ -1,9 +1,6 @@
-// import { logo, why1, why2, why3, why4, compony, finishMontg } from "../assets/CER , QLYT";
-
-import { logo } from "../assets/CER , QLYT";
+import { memo } from "react";
 import { compony, finishMontg, why1, why2, why3, why4 } from "../assets/orange";
 
- 
 const data = [
   {
     title:
@@ -38,13 +35,36 @@ const data = [
   },
 ];
 
+// Card Component
+const WhyCard = memo(({ title, image, desc }) => {
+  return (
+    <div
+      className="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden 
+             hover:shadow-lg transition-transform transform "
+    >
+      <div className="relative overflow-hidden">
+        <img
+          src={image}
+          alt={title}
+          loading="lazy" // Lazy Loading for better performance
+          className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
+        />
+      </div>
+      <div className="p-6">
+        <h3 className="text-lg font-bold text-main_Color mb-2 capitalize">
+          {title}
+        </h3>
+        <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
+      </div>
+    </div>
+  );
+});
+
 const WhyHeba = () => {
   return (
     <section className="bg-[#f9f9f9] py-10 rounded-lg shadow-md">
       {/* Section Header */}
       <div className="text-center mb-10">
-              
-
         <p className="text-main_Color text-[20px] font-bold uppercase">
           Why Choose El-Heba
         </p>
@@ -56,29 +76,12 @@ const WhyHeba = () => {
       {/* Cards Section */}
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
         {data.map((item, index) => (
-          <div
+          <WhyCard
             key={index}
-            className="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden 
-             hover:shadow-lg transition-transform transform hover:scale-105"
-          >
-            <div className="relative overflow-hidden">
-              <img
-                src={item.image}
-                alt={item.title}
-                loading="lazy"
-                className="w-full h-48 object-cover  
-                 transition-transform transform scale-100 group-hover:scale-105 duration-500 ease-out"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold text-main_Color   mb-2 capitalize ">
-                {item.title}
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed flex items-start   ">
-                 {item.desc}
-              </p>
-            </div>
-          </div>
+            title={item.title}
+            image={item.image}
+            desc={item.desc}
+          />
         ))}
       </div>
     </section>
