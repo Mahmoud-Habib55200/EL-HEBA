@@ -58,12 +58,12 @@ const ProductList = () => {
             <div
               key={product.id}
               className="bg-white border border-gray-200 rounded-xl shadow-md  hover:shadow-lg transition-transform 
-              transform hover:scale-[101%]"
+              transform hover:scale-[101%]  " 
             >
               <img
                 src={product.image}
                 alt={product.name}
-                className={`${product.imageWidth} ${product.imageHeight} h-48 object-cover`}
+                className={`${product.imageWidth} ${product.imageHeight}  h-48 object-cover   `}
                 loading="lazy"
               />
               <div className="  p-6">
@@ -71,12 +71,7 @@ const ProductList = () => {
                   {product.name}
                 </h3>
                 <p className="text-sm text-gray-600">{product.description.substring(0, 30)}...</p>
-                {/* <Link
-                  to={`/product/${product.id}`}
-                  className="text-blue-500 bg-black mt-4 inline-block font-bold"
-                >
-                  View Details →
-                </Link> */}
+              
 
                 <div className="mt-4">
                 <Link to={`/product/${product.id}`}  >

@@ -97,18 +97,18 @@ const ProductDetails = () => {
                               </p>
 
                               {/* Icons Section */}
-                              <div className="grid grid-cols-3 gap-4 mb-6">
-                                   <div className="flex items-center space-x-2">
+                              <div className="grid sm:grid-cols-1 md:grid-cols-2 items-center   gap-4 mb-6  ">
+                                   {/* <div className="flex items-center space-x-2">
                                         <FaLeaf className="text-main_Color text-2xl" />
                                         <span className="text-gray-700">Organic</span>
-                                   </div>
-                                   <div className="flex items-center space-x-2">
+                                   </div> */}
+                                   <div className="flex items-center   space-x-2">
                                         <FaGlobe className="text-main_Color text-2xl" />
-                                        <span className="text-gray-700">Global Export</span>
+                                        <span className="text-gray-700 ">Global Export</span>
                                    </div>
-                                   <div className="flex items-center space-x-2">
+                                   <div className="flex items-center  space-x-2 ">
                                         <FaWarehouse className="text-main_Color text-2xl" />
-                                        <span className="text-gray-700">Quality Storage</span>
+                                        <span className="text-gray-700 max-w-lg ">Quality Storage</span>
                                    </div>
                               </div>
 

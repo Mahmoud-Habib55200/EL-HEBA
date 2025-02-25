@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { videoStart, thirdVideo, secondVideo } from "../assets/video";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect"; // استيراد المكتبة
+ 
+ 
+
 
 const videoData = [
   { video: secondVideo, title: "Harvesting quality for you" },
@@ -21,7 +24,7 @@ const DynamicVideoPlayer = () => {
   };
 
   return (
-       <section className="relative xs:h-screen  lg:h-screen w-full">
+    <section className="  relative xs:h-screen  lg:h-screen w-full">
       {/* فيديو مع خلفية سوداء */}
       <video
         src={videoData[currentVideoIndex].video}
@@ -71,6 +74,9 @@ const DynamicVideoPlayer = () => {
         </button>
        
       </div>
+
+      
+
     </section>
   );
 };
