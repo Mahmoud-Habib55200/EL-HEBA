@@ -59,14 +59,14 @@ const DynamicVideoPlayer = () => {
       <div className="absolute bottom-[100px] left-1/2 transform -translate-x-1/2 gap-3 z-40 grid sm:grid-cols-1 lg:grid-cols-2">
         <button
           aria-label="Get started with our citrus products"
-          className="border  border-white bg-gray-900/20 backdrop-blur-md font-medium text-white px-10 py-3 rounded"
+          className="  bg-gray-900/20 backdrop-blur-md font-medium text-white px-10 py-3 rounded"
         >
           <Link to="/products" title="Explore our citrus products">
             Get Started
           </Link>
         </button>  <button
           aria-label="Get started with our citrus products"
-          className="border border-white bg-gray-900/20 backdrop-blur-md font-medium text-white px-10 py-3 rounded"
+          className="  bg-gray-900/20 backdrop-blur-md font-medium text-white px-10 py-3 rounded"
         >
           <Link to="/contact" title="Explore our citrus products">
            Contact Us
