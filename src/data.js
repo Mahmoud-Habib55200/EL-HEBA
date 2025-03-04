@@ -7,10 +7,10 @@ export const productsData = [
     id: 1,
     name: "Mandrien",
     image: mandrien1,
-    description: "A premium selection of fresh Mandrien fruits.",
+    description: "A premium selection of fresh Mandarin fruits.",
     details:
-      "Mandrien fruits are sourced from organic farms with rich taste and high nutritional value.",
-    sizes: ["Small", "Medium", "Large"],
+      "Mandarin fruits are sourced from organic farms with rich taste and high nutritional value.",
+    sizes: ["36-90"],
     exportSeason: "November to March",
     category: "fresh", // ✅ Fresh product
     nutrition: {
@@ -22,7 +22,7 @@ export const productsData = [
       vitaminC: "85%",
     },
     freshPackagingDetails: {
-      sizeCounts: "S-M-L",
+      sizeCounts: "10kg open top-15kg telescopic-15kg plastic box",
       cartonsPerPallet: 160,
       palletsPer40FT: 20,
       cartonsPer40FT: 3200,
@@ -30,11 +30,11 @@ export const productsData = [
       cartonTypes: [
         {
           type: "Open Top",
-          weights: ["8 KG", "10 KG", "15 KG", "20 KG"],
+          weights: ["8 KG", "10 KG", "15 KG"],
         },
         {
           type: "Telescopic",
-          weights: ["8 KG", "10 KG", "15 KG", "20 KG"],
+          weights: ["15 KG"],
         },
       ],
     },
@@ -360,9 +360,9 @@ export const productsData = [
 
   {
     id: 20,
-    name: "Frozen Faswolia",
+    name: "Frozen Green Beans",
     image: faswolia, // تأكد من أن اسم الصورة مناسب للمنتج
-    description: "High-quality frozen faswolia (green beans).",
+    description: "High-quality frozen Green Beans (green beans).",
     details:
       "Packed with essential vitamins and fiber, perfect for a variety of traditional and modern dishes.",
     sizes: ["Small", "Medium", "Large"],

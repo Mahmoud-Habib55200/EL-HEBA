@@ -1,4 +1,4 @@
-import { logo, partner1, partner2, partner3, partner4, partner5, partner6, partner7, partner8 } from '../assets/CER , QLYT';
+import { logo, partner1, partner10, partner2, partner3, partner4, partner5, partner6, partner7, partner8, partner9 } from '../assets/CER , QLYT';
  
 
 const Data = [
@@ -10,6 +10,8 @@ const Data = [
      { img: partner6 },
      { img: partner7 },
      { img: partner8 },
+     { img: partner9 },
+     { img: partner10 },
 ];
 
 const Partners = () => {
@@ -24,7 +26,7 @@ const Partners = () => {
                     </div>
 
                     {/* Partners Grid */}
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
                          {Data.map((partner, index) => (
                               <div
                                    key={index}

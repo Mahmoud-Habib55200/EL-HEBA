@@ -7,7 +7,9 @@ import partner5 from "./partner 5.png";
 import partner6 from "./partner 6.png";
 import partner7 from "./partner 7.png";
 import partner8 from "./partner 8.png";
-
+import partner9 from "./logotype.png";
+import partner10 from "./x5klub24.svg";
+ 
 
 // Certificate
 import cer3 from "./Asset-75-1-1-1-1-1-150x150.png";
@@ -45,6 +47,8 @@ export {
   partner6,
   partner7,
   partner8,
+  partner9,
+  partner10,
   cer3,
   cer2,
   cer4,

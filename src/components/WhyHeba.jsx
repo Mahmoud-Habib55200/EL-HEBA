@@ -1,5 +1,6 @@
 import { memo } from "react";
-import { compony, finishMontg, why1, why2, why3, why4 } from "../assets/orange";
+import { compony,   why1, why2, why3, why4 } from "../assets/orange";
+import { ac2 } from "../assets/CER , QLYT";
 
 const data = [
   {
@@ -30,7 +31,7 @@ const data = [
   },
   {
     title: "Continuous innovation for superior products.",
-    image: finishMontg,
+    image: ac2,
     desc: "Driven by continuous innovation, they consistently deliver superior products, meeting evolving market demands with excellence and quality.",
   },
 ];

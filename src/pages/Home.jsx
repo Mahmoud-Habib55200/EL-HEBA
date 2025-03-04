@@ -1,4 +1,4 @@
-import DynamicSlider from '../components/DynamicSlider'
+import DynamicSlider from '../components/BannerSlider'
 import WhatWeDo from '../components/WhatWeDo'
 import OurProducts from '../components/OurProducts'
 import Exporting from '../components/Exporting'

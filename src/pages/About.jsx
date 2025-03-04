@@ -22,7 +22,8 @@ const AboutUs = () => {
         <div className="grid grid-cols-1 lgl:grid-cols-2 gap-8 mb-12">
           <div>
             <h1 className="sm:text-2xl md:text-5xl font-bold font-sans text-green-800 mb-4">
-              Number One in The World
+              We are Growers at Heart
+
             </h1>
 
             <p className="xs:text-sm md:text-lg leading-8 text-gray-800  ">
