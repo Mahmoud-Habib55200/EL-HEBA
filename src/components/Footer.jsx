@@ -1,6 +1,6 @@
 // Desc: Footer component of the website
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { Link as RouterLink } from "react-router-dom";
+import { Link, Link as RouterLink } from "react-router-dom";
 import { logo } from "../assets/CER , QLYT";
 
 const Footer = () => {
@@ -31,41 +31,44 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <RouterLink to="/" className="hover:text-white transition duration-200">
+                <Link
+                  to="/#home" // إضافة hash للقسم
+                  className="hover:text-white transition duration-200"
+                >
                   Home
-                </RouterLink>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => handleScroll("about")}
-                  className="hover:text-white transition duration-200 cursor-pointer"
+                <Link
+                  to="/about#about" // إضافة hash للقسم
+                  className="hover:text-white transition duration-200"
                 >
                   About Us
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => handleScroll("services")}
-                  className="hover:text-white transition duration-200 cursor-pointer"
-                >
-                  Services
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => handleScroll("products")}
-                  className="hover:text-white transition duration-200 cursor-pointer"
+                <Link
+                  to="/products#products"
+                  className="hover:text-white transition duration-200"
                 >
                   Products
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => handleScroll("contact")}
-                  className="hover:text-white transition duration-200 cursor-pointer"
+                <Link
+                  to="/contact#contact" // إضافة hash للقسم
+                  className="hover:text-white transition duration-200"
                 >
                   Contact Us
-                </button>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/media#media" // إضافة hash للقسم
+                  className="hover:text-white transition duration-200"
+                >
+                  Media
+                </Link>
               </li>
             </ul>
           </div>
@@ -73,8 +76,11 @@ const Footer = () => {
           {/* Contact Section */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <p className="text-gray-400 text-sm">1234 Citrus Lane, Agri City</p>
-            <p className="text-gray-400 text-sm">+1 (800) 123-4567</p>
+            <p className="text-gray-400 text-sm">second industrial area,</p>
+            <p className="text-gray-400 text-sm">Ismailia</p>
+            <p className="text-gray-400 text-sm">Egypt</p>
+            <p className="text-gray-400 text-sm">+20 1064501682</p>
+            <p className="text-gray-400 text-sm">+20 1285555308</p>
             <p className="text-gray-400 text-sm">info@elheba.com</p>
             <div className="flex space-x-4 mt-4">
               <a
@@ -118,10 +124,16 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} El-Heba. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
-            <RouterLink to="/terms" className="text-gray-400 hover:text-white transition duration-200 mr-4">
+            <RouterLink
+              to="/terms"
+              className="text-gray-400 hover:text-white transition duration-200 mr-4"
+            >
               Terms & Conditions
             </RouterLink>
-            <RouterLink to="/privacy" className="text-gray-400 hover:text-white transition duration-200">
+            <RouterLink
+              to="/privacy"
+              className="text-gray-400 hover:text-white transition duration-200"
+            >
               Privacy Policy
             </RouterLink>
           </div>

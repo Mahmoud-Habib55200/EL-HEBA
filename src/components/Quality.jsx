@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { cer1, cer2, cer3, cer4, cer5, cer6, cer7, cer8, logo } from "../assets/CER , QLYT";
+import { cer1, cer10, cer2, cer3, cer4, cer5, cer6, cer7, cer8, cer9, logo } from "../assets/CER , QLYT";
 import { baladi, mandrien2 } from "../assets/orange";
  
 
@@ -12,6 +12,8 @@ export const creteficate = [
   { image: cer6 },
   { image: cer7 },
   { image: cer8 },
+  { image: cer9 },
+  { image: cer10 },
 ];
 const qualityData = [
   { name: "Freshness", percentage: 95, color: "#28a745" },

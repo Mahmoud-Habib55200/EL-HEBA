@@ -20,6 +20,8 @@ import cer1 from "./Asset-74-1-1-1-1-1.png";
 import cer6 from "./Asset-81-1-1-1-1-1-300x104.png";
 import cer7 from "./Asset-79-1-1-1-1-1.png";
 import cer8 from "./Asset-80-1-1-1-1-1.png";
+import cer9 from "./Certs2.png";
+import cer10 from "./Certs2 (1).png";
 
 
 // LOGO
@@ -56,7 +58,10 @@ export {
   cer6,
   cer1,
   cer7,
+
   cer8,
+  cer9,
+  cer10,
   logo,
   LogoOrighinal,
   worldMap,

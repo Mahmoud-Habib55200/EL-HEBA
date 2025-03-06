@@ -10,10 +10,23 @@ import {
   action4,
 } from "../assets/CER , QLYT";
 import { creteficate } from "../components/Quality";
+import { useEffect } from "react";
 
 const AboutUs = () => {
+  // Link when user click footer link
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const section = document.querySelector(hash);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  }, []);
+
+  //
   return (
-    <div className="bg-gray-200 py-16">
+    <div id="about" className="bg-gray-200 py-16">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-green-800 mb-12">
           About Us
@@ -23,7 +36,6 @@ const AboutUs = () => {
           <div>
             <h1 className="sm:text-2xl md:text-5xl font-bold font-sans text-green-800 mb-4">
               We are Growers at Heart
-
             </h1>
 
             <p className="xs:text-sm md:text-lg leading-8 text-gray-800  ">
@@ -140,7 +152,9 @@ const AboutUs = () => {
             </div>
             <ol className="xs:text-sm sm:text-[16px]  space-y-2 text-gray-700 sm:leading-relaxed">
               <li>
-                <strong className="text-md text-main_Color ">1: Quality:</strong>{" "}
+                <strong className="text-md text-main_Color ">
+                  1: Quality:
+                </strong>{" "}
                 We are committed to delivering high-quality agricultural
                 products that meet international standards and ensure customer
                 satisfaction.
@@ -160,11 +174,8 @@ const AboutUs = () => {
                 are dedicated to providing safe and healthy products by adhering
                 to the highest global food safety standards.
               </li>
-           
             </ol>
           </div>
-
-          
         </div>
 
         <div className="text-center my-10 bg-[#F0FDF4] py-10 px-10">

@@ -7,6 +7,15 @@ import Partners from "./Partners";
 import { useEffect, useState } from "react";
 
 const Layout = () => {
+
+
+ 
+
+
+
+
+
+
   const location = useLocation();
   const [isVisible, setIsVisible] = useState(false);
 
@@ -31,7 +40,7 @@ const Layout = () => {
       <Partners />
       <Footer />
 
-      {/* زر الصعود لأعلى الصفحة */}
+      
       <div
         className={`rotate-90 bg-main_Color text-white rounded-full fixed z-40 bottom-4 right-2 text-5xl cursor-pointer shadow-lg hover:scale-110 
    duration-500 ease-in-out
