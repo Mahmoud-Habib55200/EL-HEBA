@@ -1,11 +1,16 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, {   useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { productsData } from "../../src/data";
 import { IoIosArrowDown } from "react-icons/io";
 
 const ProductList = () => {
   const [filter, setFilter] = useState("all"); // Default: Show all products
+ 
 
+
+  
+
+   
   // Filter products based on category
   const filteredProducts =
     filter === "all"

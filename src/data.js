@@ -1,4 +1,11 @@
-import { arnabet, faswolia, manga,   prockely, psala, straw } from "./assets/Frozen";
+import {
+  arnabet,
+  faswolia,
+  manga,
+  prockely,
+  psala,
+  straw,
+} from "./assets/Frozen";
 import { baladi, mandrien1, navels, Valencia } from "./assets/orange";
 import { GrapeFruites, mango, olives, strawberries } from "./assets/products";
 
@@ -21,23 +28,18 @@ export const productsData = [
       fiber: "1.8g",
       vitaminC: "85%",
     },
-    freshPackagingDetails: {
-      sizeCounts: "10kg open top-15kg telescopic-15kg plastic box",
-      cartonsPerPallet: 160,
-      palletsPer40FT: 20,
-      cartonsPer40FT: 3200,
-      containerWeightKG: 19200,
-      cartonTypes: [
-        {
-          type: "Open Top",
-          weights: ["8 KG", "10 KG", "15 KG"],
-        },
-        {
-          type: "Telescopic",
-          weights: ["15 KG"],
-        },
-      ],
-    },
+    packagingDetails: [
+      {
+        type: "Open Top",
+        weightPerBag: ["8 kg", "10 kg"], // خيارات الوزن
+        cartonType: "Open Top",
+      },
+      {
+        type: "Telescopic",
+        weightPerBag: ["15 kg"], // خيار وزن واحد
+        cartonType: "Telescopic",
+      },
+    ],
   },
   {
     id: 2,
@@ -58,27 +60,51 @@ export const productsData = [
       fiber: "2g",
       vitaminC: "42mg (70% DV)",
     },
+    packagingDetails: [
+      {
+        type: "Open Top",
+        weightPerBag: ["8 kg", "10 kg"], // خيارات الوزن
+        cartonType: "Open Top",
+      },
+      {
+        type: "Telescopic",
+        weightPerBag: ["15 kg"], // خيار وزن واحد
+        cartonType: "Telescopic",
+      },
+    ],
   },
 
   {
     id: 3,
-    name: "Fresh Mango",
-    image: mango,
+    name: "Valencia Oranges",
+    image: Valencia,
     description:
-      "Juicy and sweet Egyptian mangoes, bursting with tropical flavor and natural goodness.",
+      "Juicy and flavorful Valencia oranges, perfect for juicing or a refreshing snack.",
     details:
-      "Egyptian fresh mangoes are known for their unique fragrance, rich flavor, and exceptional nutritional benefits, making them the king of tropical fruits.",
-    sizes: ["Medium", "Large"],
+      "Valencia oranges are known for their sweet flavor and high juice content. Perfect for fresh juice, salads, or as a healthy snack.",
+    sizes: ["Small", "Medium", "Large"],
     exportSeason: "All Year",
     category: "fresh", // ✅ Fresh product
     nutrition: {
-      calories: 65,
+      calories: 49,
       protein: "0.9g",
-      fat: "0.4g",
-      carbs: "17g",
-      fiber: "1.6g",
-      vitaminC: "36mg (60% DV)",
+      fat: "0.3g",
+      carbs: "12g",
+      fiber: "2g",
+      vitaminC: "53mg (89% DV)",
     },
+    packagingDetails: [
+      {
+        type: "Open Top",
+        weightPerBag: ["8 kg", "10 kg"], // خيارات الوزن
+        cartonType: "Open Top",
+      },
+      {
+        type: "Telescopic",
+        weightPerBag: ["15 kg"], // خيار وزن واحد
+        cartonType: "Telescopic",
+      },
+    ],
   },
 
   {
@@ -100,6 +126,18 @@ export const productsData = [
       fiber: "4g",
       vitaminC: "59mg (98% DV)",
     },
+    packagingDetails: [
+      {
+        type: "Open Top",
+        weightPerBag: ["8 kg", "10 kg"], // خيارات الوزن
+        cartonType: "Open Top",
+      },
+      {
+        type: "Telescopic",
+        weightPerBag: ["15 kg"], // خيار وزن واحد
+        cartonType: "Telescopic",
+      },
+    ],
   },
 
   {
@@ -121,6 +159,18 @@ export const productsData = [
       fiber: "3.2g",
       vitaminC: "7mg (12% DV)",
     },
+    packagingDetails: [
+      {
+        type: "Open Top",
+        weightPerBag: ["8 kg", "10 kg"], // خيارات الوزن
+        cartonType: "Open Top",
+      },
+      {
+        type: "Telescopic",
+        weightPerBag: ["15 kg"], // خيار وزن واحد
+        cartonType: "Telescopic",
+      },
+    ],
   },
 
   {
@@ -142,27 +192,51 @@ export const productsData = [
       fiber: "1.6g",
       vitaminC: "38mg (64% DV)",
     },
+    packagingDetails: [
+      {
+        type: "Open Top",
+        weightPerBag: ["8 kg", "10 kg"], // خيارات الوزن
+        cartonType: "Open Top",
+      },
+      {
+        type: "Telescopic",
+        weightPerBag: ["15 kg"], // خيار وزن واحد
+        cartonType: "Telescopic",
+      },
+    ],
   },
 
   {
     id: 8,
-    name: "Valencia Oranges",
-    image: Valencia,
+    name: "Fresh Mango",
+    image: mango,
     description:
-      "Juicy and flavorful Valencia oranges, perfect for juicing or a refreshing snack.",
+      "Juicy and sweet Egyptian mangoes, bursting with tropical flavor and natural goodness.",
     details:
-      "Valencia oranges are known for their sweet flavor and high juice content. Perfect for fresh juice, salads, or as a healthy snack.",
-    sizes: ["Small", "Medium", "Large"],
+      "Egyptian fresh mangoes are known for their unique fragrance, rich flavor, and exceptional nutritional benefits, making them the king of tropical fruits.",
+    sizes: ["Medium", "Large"],
     exportSeason: "All Year",
     category: "fresh", // ✅ Fresh product
     nutrition: {
-      calories: 49,
+      calories: 65,
       protein: "0.9g",
-      fat: "0.3g",
-      carbs: "12g",
-      fiber: "2g",
-      vitaminC: "53mg (89% DV)",
+      fat: "0.4g",
+      carbs: "17g",
+      fiber: "1.6g",
+      vitaminC: "36mg (60% DV)",
     },
+    packagingDetails: [
+      {
+        type: "Open Top",
+        weightPerBag: ["8 kg", "10 kg"], // خيارات الوزن
+        cartonType: "Open Top",
+      },
+      {
+        type: "Telescopic",
+        weightPerBag: ["15 kg"], // خيار وزن واحد
+        cartonType: "Telescopic",
+      },
+    ],
   },
 
   {
@@ -184,6 +258,18 @@ export const productsData = [
       fiber: "2g",
       vitaminC: "59mg (97% DV)",
     },
+    packagingDetails: [
+      {
+        type: "Open Top",
+        weightPerBag: ["8 kg", "10 kg"], // خيارات الوزن
+        cartonType: "Open Top",
+      },
+      {
+        type: "Telescopic",
+        weightPerBag: ["15 kg"], // خيار وزن واحد
+        cartonType: "Telescopic",
+      },
+    ],
   },
 
   // ============================= Start Data Frozen =========================
@@ -192,9 +278,6 @@ export const productsData = [
     id: 10,
     name: "Frozen Strawberries",
     image: straw,
-    imageWidth: "w-full",
-    imageHeight: "h-48",
-    imageHeights: "h-full",
 
     description:
       "Sweet and juicy frozen strawberries, perfect for year-round freshness.",
@@ -213,9 +296,9 @@ export const productsData = [
     },
 
     packagingDetails: {
-      weightPerBag: "400 - 1000 gm",
+      weightPerBag: "400 gm - 1000 gm - 2 kG ",
       bagsPerCarton: "10 - 25",
-      weightPerCarton: "10 KG",
+      weightPerCarton: "7 - 15 KG",
       additionalOption: "Or according to customer needs",
       bulkOption: {
         weightPerBag: "10 - 15 KG",
@@ -248,9 +331,9 @@ export const productsData = [
       vitaminC: "36mg (60% DV)",
     },
     packagingDetails: {
-      weightPerBag: "400 - 1000 gm",
+      weightPerBag: "400 gm - 1000 gm - 2 kG ",
       bagsPerCarton: "10 - 25",
-      weightPerCarton: "10 KG",
+      weightPerCarton: "7 - 15 KG",
       additionalOption: "Or according to customer needs",
       bulkOption: {
         weightPerBag: "10 - 15 KG",
@@ -281,9 +364,9 @@ export const productsData = [
     },
 
     packagingDetails: {
-      weightPerBag: "400 - 1000 gm",
+      weightPerBag: "400 gm - 1000 gm - 2 kG ",
       bagsPerCarton: "10 - 25",
-      weightPerCarton: "10 KG",
+      weightPerCarton: "7 - 15 KG",
       additionalOption: "Or according to customer needs",
       bulkOption: {
         weightPerBag: "10 - 15 KG",
@@ -314,9 +397,9 @@ export const productsData = [
     },
 
     packagingDetails: {
-      weightPerBag: "400 - 1000 gm",
+      weightPerBag: "400 gm - 1000 gm - 2 kG ",
       bagsPerCarton: "10 - 25",
-      weightPerCarton: "10 KG",
+      weightPerCarton: "7 - 15 KG",
       additionalOption: "Or according to customer needs",
       bulkOption: {
         weightPerBag: "10 - 15 KG",
@@ -346,14 +429,14 @@ export const productsData = [
       vitaminC: "89 mg (149% DV)",
     },
     packagingDetails: {
-      weightPerBag: "400 - 1000 g",
+      weightPerBag: "400 gm - 1000 gm - 2 kG ",
       bagsPerCarton: "10 - 25",
-      weightPerCarton: "10 kg",
+      weightPerCarton: "7 - 15 KG",
       additionalOption: "Or according to customer needs",
       bulkOption: {
-        weightPerBag: "10 - 15 kg",
+        weightPerBag: "10 - 15 KG",
         bagsPerCarton: "1 Bulk",
-        weightPerCarton: "10 - 15 kg",
+        weightPerCarton: "10 - 15 KG",
       },
     },
   },
@@ -378,9 +461,9 @@ export const productsData = [
     },
 
     packagingDetails: {
-      weightPerBag: "400 - 1000 gm",
+      weightPerBag: "400 gm - 1000 gm - 2 kG ",
       bagsPerCarton: "10 - 25",
-      weightPerCarton: "10 KG",
+      weightPerCarton: "7 - 15 KG",
       additionalOption: "Or according to customer needs",
       bulkOption: {
         weightPerBag: "10 - 15 KG",
