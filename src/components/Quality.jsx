@@ -117,8 +117,7 @@ const QualitySection = () => {
 
           <div>
             <div className="flex justify-center items-center ">
-              {" "}
-              <img src={mandrien2} alt="" />
+              <img src={mandrien2} loading="lazy" alt="mandrien orange" />
             </div>
 
             <div className="grid grid-cols-4 gap-4 mt-4   ">
@@ -127,7 +126,7 @@ const QualitySection = () => {
                   key={index}
                   className="flex justify-center items-center w-20"
                 >
-                  <img src={item.image} alt="" />
+                  <img src={item.image} loading="lazy" alt=" orange " />
                 </div>
               ))}
             </div>

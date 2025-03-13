@@ -28,14 +28,14 @@ const productsData = [
 
   { name: "Valencia", image: Valencia },
   { name: "Grape Fruites", image: GrapeFruites },
-
+  
   { name: "Mango", image: mango },
+  { name: "Strawberries", image: strawberries },
   { name: "Olives", image: olives },
   { name: "Frozen Peas", image: psala },
   { name: "Frozen Broccoli", image: prockely },
   { name: "Frozen Green Beans", image: faswolia },
   { name: "Frozen Cauliflower", image: arnabet },
-  { name: "Strawberries", image: strawberries },
 
 ];
 
@@ -94,6 +94,7 @@ const FreeModeSlider = () => {
                 <img
                   src={product.image}
                   alt={product.name}
+                  loading="lazy"
                   className="w-full h-48 object-cover"
                 />
               </div>

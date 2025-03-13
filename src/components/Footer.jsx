@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Section */}
           <div>
-            <img src={logo} alt="El-Heba Logo" className="w-20 mb-4" />
+            <img src={logo} alt="El-Heba Logo" loading="lazy" className="w-20 mb-4" />
             <p className="text-sm text-gray-400">
               At El-Heba, we combine tradition and innovation to deliver
               high-quality agricultural products with a commitment to

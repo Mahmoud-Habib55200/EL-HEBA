@@ -61,22 +61,26 @@ const AboutUs = () => {
               <img
                 className="rounded hover:brightness-90 hover:scale-105 transition-transform duration-300 cursor-pointer"
                 src={ac1}
-                alt=""
+                alt="componey orange"
+                loading="lazy"
               />
               <img
                 className="rounded hover:brightness-90 hover:scale-105 transition-transform duration-300 cursor-pointer"
                 src={ac2}
-                alt=""
+                alt="valencia orange"
+                loading="lazy"
               />
               <img
                 className=" rounded hover:brightness-90 hover:scale-105 transition-transform duration-300cursor-pointer"
                 src={ac3}
-                alt=""
+                alt="strawberry"
+                loading="lazy"
               />
               <img
                 className="rounded hover:brightness-90 hover:scale-105 transition-transform duration-300  cursor-pointer"
                 src={ac4}
-                alt=""
+                alt="strawberries farm"
+                loading="lazy"
               />
             </div>
           </div>
@@ -122,22 +126,26 @@ const AboutUs = () => {
               <img
                 className="rounded hover:brightness-90  cursor-pointer hover:scale-105 transition-transform duration-300"
                 src={action1}
-                alt=""
+                alt="Farm Strawberries"
+                loading="lazy"
               />
               <img
                 className="rounded hover:brightness-90 hover:scale-105 transition-transform duration-300 cursor-pointer"
                 src={action2}
-                alt=""
+                alt="Farmer"
+                loading="lazy"
               />
               <img
                 className=" rounded hover:brightness-90 hover:scale-105 transition-transform duration-300 cursor-pointer"
                 src={action3}
-                alt=""
+                alt="Orange Farm"
+                loading="lazy"
               />
               <img
                 className="rounded hover:brightness-90 hover:scale-105 transition-transform duration-300 cursor-pointer"
                 src={action4}
-                alt=""
+                alt="Farm"
+                loading="lazy"
               />
             </div>
           </div>
@@ -190,7 +198,8 @@ const AboutUs = () => {
               >
                 <img
                   src={item.image}
-                  alt=""
+                  alt="Certificate"
+                  loading="lazy"
                   className="max-w-full max-h-full"
                 />
               </div>

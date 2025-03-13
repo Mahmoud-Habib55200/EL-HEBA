@@ -19,10 +19,10 @@ const Media = () => {
       <h2 className="text-4xl font-bold text-center mb-6 text-gray-800">
         Our Media
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
-        <div className="w-full max-w-md bg-white rounded-2xl shadow-lg overflow-hidden">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6  ">
+        <div className="w-full   bg-white rounded shadow-lg overflow-hidden">
           <iframe
-            className="w-full h-64 rounded-t-2xl"
+            className="w-full h-[70vh]  rounded"
             src="https://www.youtube.com/embed/FrPDhfJTbAw?si=FB8gzc79uMJnvMAc"
             title="YouTube video player"
             frameBorder="0"
@@ -30,16 +30,10 @@ const Media = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           />
-          <div className="p-4">
-            <h3 className="text-lg font-semibold text-center text-gray-800">
-              Strawberry Journey From Farm to Export Factory
-            </h3>
-          </div>
-        </div>
-
-        <div className="w-full max-w-md bg-white rounded-2xl shadow-lg overflow-hidden">
+        </div>{" "}
+        <div className="w-full   bg-white rounded shadow-lg overflow-hidden">
           <iframe
-            className="w-full h-64 rounded-t-2xl"
+            className="w-full h-[70vh]   rounded"
             src="https://www.youtube.com/embed/mOeHXMCn34U?si=EiV7pSmMzoSDykKk"
             title="YouTube video player"
             frameBorder="0"
@@ -47,11 +41,6 @@ const Media = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           />
-          <div className="p-4">
-            <h3 className="text-lg font-semibold text-black  text-center">
-              From Farm to the World! with El-Heba
-            </h3>
-          </div>
         </div>
       </div>
     </div>

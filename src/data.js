@@ -14,6 +14,9 @@ export const productsData = [
     id: 1,
     name: "Mandrien",
     image: mandrien1,
+    imageWidth: "w-[75%]",
+     
+
     description: "A premium selection of fresh Mandarin fruits.",
     details:
       "Mandarin fruits are sourced from organic farms with rich taste and high nutritional value.",
@@ -45,6 +48,8 @@ export const productsData = [
     id: 2,
     name: "Egyptian Baladi Orange",
     image: baladi,
+    imageWidth: "w-[75%]",
+
     description:
       "Premium Egyptian Baladi oranges with exceptional juiciness and flavor.",
     details:
@@ -78,6 +83,8 @@ export const productsData = [
     id: 3,
     name: "Valencia Oranges",
     image: Valencia,
+    imageWidth: "w-[90%]",
+
     description:
       "Juicy and flavorful Valencia oranges, perfect for juicing or a refreshing snack.",
     details:
@@ -111,6 +118,8 @@ export const productsData = [
     id: 4,
     name: "Navel Oranges",
     image: navels,
+    imageWidth: "w-[80%]",
+
     description:
       "Sweet and seedless Navel oranges, bursting with refreshing citrus flavor.",
     details:
@@ -143,6 +152,8 @@ export const productsData = [
   {
     id: 5,
     name: "Olives",
+    imageWidth: "w-[100%]",
+
     image: olives,
     description:
       "High-quality, fresh olives with rich flavor and natural goodness.",
@@ -176,6 +187,8 @@ export const productsData = [
   {
     id: 6,
     name: "Grapefruits",
+    imageWidth: "w-[90%]",
+
     image: GrapeFruites, // تأكد من توافق الاسم مع الصورة
     description:
       "Refreshing and tangy grapefruits, bursting with citrus flavor and health benefits.",
@@ -210,6 +223,8 @@ export const productsData = [
     id: 8,
     name: "Fresh Mango",
     image: mango,
+    imageWidth: "w-[100%]",
+
     description:
       "Juicy and sweet Egyptian mangoes, bursting with tropical flavor and natural goodness.",
     details:
@@ -242,6 +257,8 @@ export const productsData = [
   {
     id: 9,
     name: "Strawberries",
+    imageWidth: "w-[100%]",
+
     image: strawberries,
     description:
       "Fresh, juicy strawberries bursting with natural sweetness and vibrant color.",
@@ -278,6 +295,7 @@ export const productsData = [
     id: 10,
     name: "Frozen Strawberries",
     image: straw,
+    imageWidth: "w-[100%]",
 
     description:
       "Sweet and juicy frozen strawberries, perfect for year-round freshness.",
@@ -312,8 +330,7 @@ export const productsData = [
     id: 11,
     name: "Frozen Mango",
     image: manga,
-    imageWidth: "w-[80%]",
-    imageHeight: "h-48",
+    imageWidth: "w-[100%]",
 
     description:
       "Juicy and sweet frozen mango slices, perfect for smoothies and desserts.",
@@ -347,6 +364,8 @@ export const productsData = [
     id: 13,
     name: "Frozen Peas",
     image: psala,
+    imageWidth: "w-[100%]",
+
     description:
       "Nutritious and delicious frozen peas, perfect for healthy meals all year round.",
     details:
@@ -380,6 +399,8 @@ export const productsData = [
     id: 14,
     name: "Frozen Cauliflower",
     image: arnabet,
+    imageWidth: "w-[100%]",
+
     description:
       "High-quality frozen cauliflower, perfect for healthy and low-carb dishes.",
     details:
@@ -412,6 +433,8 @@ export const productsData = [
   {
     id: 16,
     name: "Frozen Broccoli",
+    imageWidth: "w-[100%]",
+
     image: prockely, // تأكد من أن الصورة مناسبة للبروكلي
     description:
       "Premium frozen broccoli with vibrant green florets and rich flavor.",
@@ -444,6 +467,8 @@ export const productsData = [
   {
     id: 20,
     name: "Frozen Green Beans",
+    imageWidth: "w-[100%]",
+
     image: faswolia, // تأكد من أن اسم الصورة مناسب للمنتج
     description: "High-quality frozen Green Beans (green beans).",
     details:

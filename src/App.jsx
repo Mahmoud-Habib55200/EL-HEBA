@@ -6,8 +6,27 @@ import Media from "./pages/Media";
 import Contact from "./pages/Contact";
 import Layout from "./components/Layout";
 import ProductDetails from "./components/ProductDetails ";
+import { useEffect } from "react";
 
 const App = () => {
+
+ useEffect(() => {
+   const script = document.createElement("script");
+   script.async = true;
+   script.src = "https://www.googletagmanager.com/gtag/js?id=G-GTX588WB51";
+   document.head.appendChild(script);
+
+   script.onload = () => {
+     window.dataLayer = window.dataLayer || [];
+     function gtag() {
+       dataLayer.push(arguments);
+     }
+     gtag("js", new Date());
+     gtag("config", "G-GTX588WB51");
+   };
+ }, []);
+
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route>

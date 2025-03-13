@@ -1,4 +1,4 @@
-import React, {   useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { productsData } from "../../src/data";
 import { IoIosArrowDown } from "react-icons/io";
@@ -79,7 +79,7 @@ const ProductList = () => {
               <img
                 src={product.image}
                 alt={product.name}
-                className={`${product.imageWidth} ${product.imageHeight}  h-48 object-cover   `}
+                className={`${product.imageWidth}   h-48 object-cover   `}
                 loading="lazy"
               />
               <div className="  p-6">
@@ -87,7 +87,7 @@ const ProductList = () => {
                   {product.name}
                 </h3>
                 <p className="text-sm text-gray-600">
-                  {product.description.substring(0, 30)}...
+                  {product.description.substring(0, 35)}...
                 </p>
 
                 <div className="mt-4">

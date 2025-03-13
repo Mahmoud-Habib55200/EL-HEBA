@@ -58,7 +58,7 @@ const ProductDetails = () => {
           <FaArrowCircleLeft />
         </Link>
 
-        <div className="grid md:grid-cols-2 gap-8 bg-white rounded-xl shadow-lg overflow-hidden">
+        <div className="grid md:grid-cols-2 gap-8 bg-white rounded-md shadow-lg overflow-hidden">
           {/* Product Image */}
           <motion.div
             className="relative flex justify-center items-center"
@@ -69,7 +69,9 @@ const ProductDetails = () => {
             <img
               src={product.image}
               alt={product.name}
-              className="h-48 object-cover rounded-xl"
+              loading="lazy"
+             
+              className={`${product.imageWidth} ${product.imageWidthDetails}  `}
             />
           </motion.div>
 
