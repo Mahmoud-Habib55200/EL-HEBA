@@ -19,7 +19,7 @@ import why3 from "./why2.JPG";
 import why4 from "./whyheba.JPG";
 import compony from "./compony.JPG";
 import finishMontg from "./montg.jpeg";
-import morket from './morcket.jpg'
+import Murcott from "./morcket.jpg";
 export {
   mandrien2,
   mandrien1,
@@ -37,5 +37,5 @@ export {
   why4,
   compony,
   finishMontg,
-  morket,
+  Murcott,
 };

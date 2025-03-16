@@ -39,20 +39,20 @@ const AboutUs = () => {
             </h1>
 
             <p className="xs:text-sm md:text-lg leading-8 text-gray-800  ">
-              **El-Heba Agricultural Development** is one of the leading
-              companies in the production and export of fresh citrus fruits. Its
-              headquarters are located in **the Second Industrial Area in
-              Ismailia, Egypt**.
+              <strong>El-Heba Agricultural Development:</strong> is one of the
+              leading companies in the production and export of fresh citrus
+              fruits. Its headquarters are located in the Second Industrial Area
+              in Ismailia, Egypt.
               <br />
               <br />
-              The company owns **vast farms** that utilize the latest
-              agricultural techniques to ensure high quality and sustainability
-              in production.
+              The company owns <strong>vast farms</strong> that utilize the
+              latest agricultural techniques to ensure high quality and
+              sustainability in production.
               <br />
               <br />
               El-Heba follows an integrated business model that tracks products
               from cultivation to delivery to customers worldwide, with a focus
-              on **quality and food safety**.
+              on <strong>quality and food safety</strong>.
             </p>
           </div>
 

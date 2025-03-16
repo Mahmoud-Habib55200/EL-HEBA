@@ -1,48 +1,40 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
 import { FreeMode, Autoplay } from "swiper/modules";
+import { GrapeFruites, mango, olives, strawberries } from "../assets/products";
+import { baladi, mandrien2, Murcott, Valencia } from "../assets/orange";
 
 import {
-  GrapeFruites,
-  Grapes,
-  mango,
-  olives,
-  peasala,
-  strawberries,
-} from "../assets/products";
-import {
-  baladi,
-  mandrien1,
-  mandrien2,
-  morket,
-  navels,
-  Valencia,
-} from "../assets/orange";
-import { logo } from "../assets/CER , QLYT";
-import { arnabet, faswolia, prockely, psala } from "../assets/Frozen";
+  arnabet,
+  faswolia,
+  manga,
+  prockely,
+  psala,
+  straw,
+} from "../assets/Frozen";
+import { Link } from "react-router-dom";
 
 const productsData = [
-  { name: "Egyptian Baladi Orange", image: baladi },
-  { name: "Mandrien", image: mandrien2 },
-  { name: "Morket", image: morket },
-
-  { name: "Valencia", image: Valencia },
-  { name: "Grape Fruites", image: GrapeFruites },
-  
-  { name: "Mango", image: mango },
-  { name: "Strawberries", image: strawberries },
-  { name: "Olives", image: olives },
-  { name: "Frozen Peas", image: psala },
-  { name: "Frozen Broccoli", image: prockely },
-  { name: "Frozen Green Beans", image: faswolia },
-  { name: "Frozen Cauliflower", image: arnabet },
-
+  { id: 1, name: "Mandrien", image: mandrien2 },
+  { id: 2, name: "Egyptian Baladi Orange", image: baladi },
+  { id: 3, name: "Murcott", image: Murcott },
+  { id: 3, name: "Valencia", image: Valencia },
+  { id: 6, name: "Grape Fruites", image: GrapeFruites },
+  { id: 8, name: "Mango", image: mango },
+  { id: 9, name: "Strawberries", image: strawberries },
+  { id: 5, name: "Olives", image: olives },
+  { id: 13, name: "Frozen Peas", image: psala },
+  { id: 16, name: "Frozen Broccoli", image: prockely },
+  { id: 11, name: "Frozen Mango", image: manga },
+  { id: 20, name: "Frozen Green Beans", image: faswolia },
+  { id: 14, name: "Frozen Cauliflower", image: arnabet },
+  { id: 10, name: "Frozen Strawberries", image: straw },
 ];
 
 // Map of colors for each title
 const colorsMap = {
   "Egyptian Baladi Orange": "#e8a025", // Red-Orange
-  "Morket": "#fc6810", // Red-Orange
+  Murcott: "#fc6810", // Red-Orange
   Mandrien: "#fc6810", // Red-Orange
 
   Mango: "#fc6810", // Yellow
@@ -51,8 +43,11 @@ const colorsMap = {
   "Grape Fruites": "#F06368", // Pink
   "Frozen Peas": "#5f9915", // Purple
   "Frozen Broccoli": "#5f9915", // Purple
+  "Frozen Mango": "#E38302", // Purple
+  "Frozen Strawberries": "#fc0d05",
+
   "Frozen Green Beans": "#5f9915", // Purple
-  "Frozen Cauliflower": "#ffc868", // Purple
+  "Frozen Cauliflower": "#BE9659", // Purple
   Valencia: "#E75F02", // Red-Orange
   Strawberries: "#fc0d05", // Deep Pink
 };
@@ -99,12 +94,14 @@ const FreeModeSlider = () => {
                 />
               </div>
               <div className="p-4 bg-white">
-                <h3
-                  className="text-center text-lg font-bold  "
-                  style={{ color: colorsMap[product.name] || "#000" }}
-                >
-                  {product.name}
-                </h3>
+                <Link to={`/product/${product.id}`}>
+                  <h3
+                    className="text-center text-lg font-bold  "
+                    style={{ color: colorsMap[product.name] || "#000" }}
+                  >
+                    {product.name}
+                  </h3>
+                </Link>
               </div>
             </SwiperSlide>
           ))}

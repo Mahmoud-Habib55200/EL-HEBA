@@ -50,7 +50,7 @@ const Contact = () => {
               </li>
               <li className="text-gray-700 flex items-center gap-3">
                 <FaPhoneAlt className="text-green-600 text-xl" />
-                <span>+20 1064501682 | +20 1285555308</span>
+                <span>+20 1063133591 | +20 1285555308</span>
               </li>
               <li className="text-gray-700 flex items-center gap-3">
                 <FaEnvelope className="text-green-600 text-xl" />
